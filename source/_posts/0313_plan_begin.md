@@ -1,7 +1,7 @@
 ---
 title: first day
 date: 2022-03-10 03:18:11
-tags:
+tags: learn
 ---
 ### words
  - accuracy   presuppose  bilingual   skyscraper  consensus   premier   violate   condemn   feeble   ankle   
