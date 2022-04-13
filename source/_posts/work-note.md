@@ -14,4 +14,19 @@ tags:
 
 ### svg review
 - in vue project use svg in global
-- 
+
+### toFixed()
+- basic rule: four drop six add five see condition
+  ```
+    2.34.toFixed(1) -> '2.3'
+    2.36.toFixed(1) -> '2.4'
+    2.35.toFixed(1) -> '2.4'
+    2.335.toFixed(2) -> '2.33'
+    2.3351.toFixed(2) -> '2.34' behind five have no-zero number will add
+    2.345.toFixed(2) -> '2.35' before five is even number and smaller than five
+    2.355.toFixed(2) -> '2.35' before five is odd number and smaller than five
+    2.365.toFixed(2) -> '2.37' 
+    2.375.toFixed(2) -> '2.38' before five is bigger than five will add
+    -2.335.toFixed(2) -> -2.33 negative number turn to number of type
+    (-2.335).toFixed(2) -> '-2.33' negative number turn to string of type
+  ```
