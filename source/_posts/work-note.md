@@ -30,3 +30,7 @@ tags:
     -2.335.toFixed(2) -> -2.33 negative number turn to number of type
     (-2.335).toFixed(2) -> '-2.33' negative number turn to string of type
   ```
+
+### use tampermonkey to add username and password
+- when login at usually pages,can remember username and password to auto login
+- simple auto-test
