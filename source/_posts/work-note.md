@@ -59,3 +59,32 @@ window.document.ready(function(){/*code*/})
 - https://juejin.cn/post/6897119761302454279 vuepress github pages
 - https://juejin.cn/post/6844904025272352775 vue express nodejs; from front to end
 - https://juejin.cn/post/7049692191110725645 buy server and deploy
+### on server install nginx
+```
+<!-- # wget  http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm -->
+2
+
+建立nginx的yum仓库
+
+<!-- # rpm -ivh nginx-release-centos-7-0.el7.ngx.noarch.rpm -->
+1
+
+下载并安装nginx
+
+# yum install nginx
+2
+Enable Nginx to start at boot time
+# systemctl enable nginx
+3 启动nginx服务
+# systemctl start nginx
+4 Check the current Nginx runtime status:
+# systemctl status nginx
+
+
+Enable all Nginx ports:
+Using Firewalld (CentOS, RockyLinux)
+# firewall-cmd --zone=public --add-service=http –permanent
+# firewall-cmd --zone=public --add-service=https --permanent
+
+
+```
