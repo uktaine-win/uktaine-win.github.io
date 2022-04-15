@@ -34,3 +34,28 @@ tags:
 ### use tampermonkey to add username and password
 - when login at usually pages,can remember username and password to auto login
 - simple auto-test
+
+### window.onload() window.document.ready()
+- when the html page is ready or loaded,can run script.
+ ```
+window.onload = function() { /*code*/}
+window.document.ready(function(){/*code*/})
+```
+- need to certain
+### window page lifecycle
+- when open a page
+- when DOM is ready,document event DOMContentLoaded can be trigger,on this time can run some script
+- and <script>..code..</script> or <script src=""></script> will obstruct the DOMContentLoaded event
+- at the same time the image can keep loading not clog
+- when every source is loaded,the window.load event can be trigger
+- when user left page 
+- window.onbeforeunload 
+- window.unload
+- other tips: document.readyState have three state => loading -> interactive -> complete
+
+### deploy serve on server
+- https://juejin.cn/post/6844904032218120200  nginx pm2 
+- https://juejin.cn/post/6844903811127967758  scp2 auto deploy to different environment
+- https://juejin.cn/post/6897119761302454279 vuepress github pages
+- https://juejin.cn/post/6844904025272352775 vue express nodejs; from front to end
+- https://juejin.cn/post/7049692191110725645 buy server and deploy
